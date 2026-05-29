@@ -4,6 +4,7 @@ table, th, td {
 
 table {
     border-collapse:collapse;
+    width: 100%;
 }
 
 th, td {
@@ -11,5 +12,9 @@ th, td {
 }
 
 th {
+    text-align: center;
+}
+
+td {
     text-align: left;
 }
