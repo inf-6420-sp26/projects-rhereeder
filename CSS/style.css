@@ -6,6 +6,10 @@ table, th, td {
   border: 1px solid;
 }
 
+p1 {
+    font-style: italic
+}
+
 table {
     border-collapse:collapse;
     width: 100%;
