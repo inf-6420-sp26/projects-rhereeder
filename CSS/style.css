@@ -2,6 +2,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+}
+
 table, th, td {
   border: 1px solid;
 }
