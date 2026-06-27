@@ -40,9 +40,9 @@ h2 {
     background-color: #F0F0F0;
 }
 
-    dd {
-        padding-bottom: 10px;
-    }
+dd {
+    padding-bottom: 10px;
+}
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -60,7 +60,7 @@ img {
     padding-left: 5px;
     max-width: 260px;
     height: auto;
-    }
+}
 
 p {
     text-align: left;
@@ -71,6 +71,7 @@ footer {
     color: white;
     background-color: #3E1305;
     padding: 10px;
+
         p {
             padding: 0px;
         }
