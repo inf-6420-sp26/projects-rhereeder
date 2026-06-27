@@ -1,15 +1,18 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: auto;
 }
 
+.container {
+    width: 1170px;
+    padding: 10px;
+    text-align: left;
+}
 header {
     background-image: url("../images/paul-gilmore-145802-unsplash.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     color: white;
+    padding:10px;
 }
 
 h1, h2 {
@@ -18,36 +21,62 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 50px;
+   font-size: 60px;
+   margin: 0;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .motto {
     font-style: italic;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
-.container {
-    width: 1170px;
-    max-width: 100%
+#menu {
+    background-color: #F0F0F0;
 }
 
-nav {
-    background-color: #F0F0F0
-}
+    dd {
+        padding-bottom: 10px;
+    }
 
 body {
-    font-family: 'Nunito Sans', sans-serif
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 main {
     background-color: #E0E0E0;
 }
 
-footer{
-    color: white;
-    background-color: #3E1305;
+img {
+    vertical-align: text-top;
+    float: right;
+    padding-top: 10px;
+    padding-right:5px;
+    padding-left: 5px;
+    max-width: 260px;
+    height: auto;
+    }
+
+p {
+    text-align: left;
+    padding-bottom: 20px;
 }
 
+footer {
+    color: white;
+    background-color: #3E1305;
+    padding: 10px;
+        p {
+            padding: 0px;
+        }
+}
+
+a:link {
+    fill: white;
+    color: #3E1305;
+}
