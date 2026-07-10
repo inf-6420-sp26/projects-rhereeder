@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+body {
+  background-color: #FFF0F5;
+  font-family: "Elms Sans", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+header {
+  background-color: #FFF0F5;
+  color: #4B0082;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4B0082;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    background-color: #111111;
+  }
+}
+
+main {
+  ul {
+    a:link {
+      color: #111111;
+    }
+
+    a:hover {
+      color: #4B0082;
+    }
+  }
+}
+
+form {
+  display: flex;
+}
+
+form div {
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+input {
+  width: 100%;
+  font-size: inherit;
+  padding: 1px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 1px;
+  height: 100px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+button {
+  cursor: pointer;
+  width: 8em;
+  padding: .5em;
+  margin-top: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #4B0082;
+}
