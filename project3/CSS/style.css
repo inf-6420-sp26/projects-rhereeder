@@ -1,26 +1,21 @@
 * {
   box-sizing: border-box;
-  margin: 5px;
+  margin: 10px;
+  padding: 0;
 }
 
 body {
   background-color: #FFF0F5;
   font-family: "Elms Sans", sans-serif;
+  line-height: 1.6;
+  color: #2d2a24;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1100px;
   padding: 20px;
-}
-
-h1 {
-  font-size: 50px;
-  text-align: center;
-}
-
-h2 {
-  margin: 0;
 }
 
 header {
@@ -29,85 +24,250 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 16px 0;
+}
+
+header h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #4B0082;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 5px;
 }
 
 nav {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #4B0082;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-  }
-
-  ul li a {
-    display: block;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  ul li a:hover {
-    background-color: #111111;
-  }
+  background-color: #4B0082;
+  padding: 0 20px;
 }
 
-main {
-  ul {
-    a:link {
-      color: #111111;
-    }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #4B0082;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1170px;
+  margin: auto;
+  flex-wrap: wrap;
+}
 
-    a:hover {
-      color: #4B0082;
-    }
-  }
+nav ul li a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a.active {
+  background-color: #ffffff;
+  color: #4B0082;
+}
+
+nav ul li a.active:hover {
+  background-color: #f5edf7;
+}
+
+.page-hero {
+  text-align: center;
+  padding: 16px 0 32px;
+}
+
+.page-hero h2 {
+  font-size: 32px;
+  color: #4B0082;
+  margin-bottom: 8px;
+}
+
+.page-hero p {
+  font-size: 20px;
+  color: #5a4a6a;
+}
+
+.guide-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-card {
+  background: white;
+  padding: 28px 32px;
+  flex: 1 1 calc (50% - 24px);
+  min-width: 280px;
+
+}
+
+.guide-card h2,
+.guide-card h3 {
+  color: #4B0082;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 3px solid #fff0f5;
+  padding-bottom: 9px;
+}
+
+.guide-card p {
+  color: #2d2a24;
+  margin-bottom: 9px;
+}
+
+.guide-grid>li {
+  background: white;
+  padding: 30px 32px;
+  flex: 1 1 calc(50% - 24px);
+  min-width: 250px;
+  list-style: none;
+}
+
+.guide-card a {
+  color: #4B0082;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.guide-card a:hover {
+  color: #2d0050;
+  text-decoration: none;
+}
+
+.guide-card ul,
+.guide-card ol {
+  padding-left: 24px;
+  color: #2d2a24;
+  list-style-type: disc;
+  margin-top: 8px;
+}
+
+.guide-card ul li,
+.guide-card ol li {
+  margin-bottom: 3px;
 }
 
 form {
   display: flex;
-}
-
-form div {
   flex-direction: column;
+  max-width: 1170px;
+  margin: 0 auto;
+  background: white;
+  padding: 32px;
 }
 
-label {
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 0;
+}
+
+.field label {
   display: block;
-  margin-bottom: 1px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-bottom: 6px;
+  color: #4B0082
 }
 
-input {
+.field input,
+.field textarea {
   width: 100%;
-  font-size: inherit;
-  padding: 1px;
-  margin-bottom: 5px;
-}
-
-textarea {
-  width: 100%;
-  padding: 1px;
-  height: 100px;
+  padding: 10px;
+  margin: 5px;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px;
+  background: #fff;
 }
 
-input:required {
+.field input:required {
   border: 2px solid red;
 }
 
-input:valid {
+.input:valid {
   border: 2px solid green;
 }
 
-button {
+.form-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
   cursor: pointer;
-  width: 8em;
-  padding: .5em;
-  margin-top: 1em;
+  padding: 5px;
+  margin: 2px;
+  border: none;
   font-weight: bold;
   color: white;
   background-color: #4B0082;
+  font-size: 16px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 4px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .page-hero h2 {
+    font-size: 24px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .guide-card {
+    flex: 1 1 100%;
+    padding: 24px;
+  }
+
+  .grid-guide>li {
+    flex: 1 1 100%;
+    padding: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  form {
+    padding: 24px;
+    margin: 0 10px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
