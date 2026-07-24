@@ -18,7 +18,6 @@ body {
     color: #fff;
     padding: 20px 20px;
     margin-bottom: 20px;
-    border-radius: 30px 30px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +46,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 1170px;
+    max-width: 1400px;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -83,8 +82,7 @@ body {
 }
 
 .page-wrapper {
-    max-width: 1170px;
-    margin: 0 auto;
+    max-width: 1400px;
     width: 100%;
     flex: 1;
     display: flex;
@@ -104,7 +102,7 @@ body {
     }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1400px) {
     .video-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -160,4 +158,80 @@ body {
     gap: 10px;
     padding: 15px;
     flex: 1;
+}
+
+.video-detail {
+    background: #fff;
+    border-radius: 32px;
+    padding: 28px 32px 32px;
+    margin: 20px 0;
+    border: 1px solid #0b1e33;
+}
+
+.video-detail h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.video-wrapper {
+    background: #000;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    display: block;
+    background: #000;
+    aspect-ratio: 16 / 9;
+}
+
+.video-description {
+    font-size: 16px;
+    padding: 10px 0;
+    margin: 18px 0;
+    line-height: 1.5;
+    border-left: 5px solid #0b1e33;
+}
+
+.video-description p {
+    margin: 0;
+    padding: 0 10px;
+    font-weight: bold;
+
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #0b1e33;
+}
+
+.comment-section h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #0b1e33;
 }
