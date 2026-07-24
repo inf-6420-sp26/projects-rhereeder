@@ -5,17 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div class="site-header">
-        <h1>Video Library</h1>
-        
+    <div class="page-wrapper">
+        <header>
+            <div class="site-header">
+                <h1>Web Video Gallery</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="video1.html">Video 1</a></li>
+                        <li><a href="video2.html">Video 2</a></li>
+                        <li><a href="video3.html">Video 3</a></li>
+                        <li><a href="video4.html">Video 4</a></li>
+                        <li><a href="video5.html">Video 5</a></li>
+                        <li><a href="video6.html">Video 6</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="video-grid">
+                <div class="video-card">
+                    <a href="video1.html" class="video-link" aria-label="Play video 1">
+                        <img class="poster-img" src="./assets/images/video-1-frame1.jpg" alt="Video One">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video One</h2>
+                        <p class="video-description">Description for Video One.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <a href="video2.html" class="video-link" aria-label="Play video 2">
+                        <img class="poster-img" src="./assets/images/video-2-frame1.jpg" alt="Video Two">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video Two</h2>
+                        <p class="video-description">Description for Video Two.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <a href="video3.html" class="video-link" aria-label="Play video 3">
+                        <img class="poster-img" src="./assets/images/video-3-frame1.jpg" alt="Video Three">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video Three</h2>
+                        <p class="video-description">Description for Video Three.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <a href="video4.html" class="video-link" aria-label="Play video 4">
+                        <img class="poster-img" src="./assets/images/video-4-frame1.jpg" alt="Video Four">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video Four</h2>
+                        <p class="video-description">Description for Video Four.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <a href="video5.html" class="video-link" aria-label="Play video 5">
+                        <img class="poster-img" src="./assets/images/video-5-frame1.jpg" alt="Video Five">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video Five</h2>
+                        <p class="video-description">Description for Video Five.</p>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <a href="video6.html" class="video-link" aria-label="Play video 6">
+                        <img class="poster-img" src="./assets/images/video-6-frame1.jpg" alt="Video Six">
+                    </a>
+                    <div class="video-info">
+                        <h2 class="video-title">Video Six</h2>
+                        <p class="video-description">Description for Video Six.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Web Video Gallery. All rights reserved.</p>
+        </footer>
     </div>
 </body>
+
+</html>
